@@ -27,6 +27,16 @@ header {
   margin-bottom: 30px;
 }
 
+.genreList{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    width: 450px;
+
+}
+
+
 .movie {
   min-width: 303px;
   height: 328px;
@@ -36,8 +46,18 @@ header {
   padding: 19px;
 }
 
+.title{
+    font-weight:bold;
+    font-size: 2rem;
+}
+
+
+
 button {
-  background-color: #4c7ef3;
-  color: #fff;
-  cursor: pointer;
+    background-color: #b9dad5;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    font-size: 1rem;
+    border: none;
 }

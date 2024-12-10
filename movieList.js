@@ -1,17 +1,4 @@
-// JavaScript source code
-
-//make a program that generates random movie suggestion based on users selected genre
-// movies can have multiple genres so can be overlap
-// should include year and director
-//sci-fi
-//fantasy
-//adventure
-//drama
-//comedy
-//kids
-//horror
-//romance
-const movies = {
+ï»¿const movies = {
     "romance": [
         {
             "id": "1",
@@ -251,7 +238,7 @@ const movies = {
             "id": "40",
             "title": "Chocolat",
             "year": "2000",
-            "director": "Lasse Hallström"
+            "director": "Lasse HallstrÃ¶m"
         },
         {
             "id": "41",
@@ -499,7 +486,7 @@ const movies = {
             "id": "18",
             "title": "Children of Men",
             "year": "2006",
-            "director": "Alfonso Cuarón"
+            "director": "Alfonso CuarÃ³n"
         },
         {
             "id": "19",
@@ -1053,7 +1040,7 @@ const movies = {
             "id": "49",
             "title": "Raya and the Last Dragon",
             "year": "2021",
-            "director": "Don Hall, Carlos López Estrada"
+            "director": "Don Hall, Carlos LÃ³pez Estrada"
         },
         {
             "id": "50",
@@ -1129,7 +1116,7 @@ const movies = {
         },
         {
             "id": "62",
-            "title": "Madagascar 3: Europe’s Most Wanted",
+            "title": "Madagascar 3: Europeâ€™s Most Wanted",
             "year": "2012",
             "director": "Eric Darnell, Tom McGrath"
         },
@@ -1379,7 +1366,7 @@ const movies = {
             "id": "19",
             "title": "The Blair Witch Project",
             "year": "1999",
-            "director": "Daniel Myrick, Eduardo Sánchez"
+            "director": "Daniel Myrick, Eduardo SÃ¡nchez"
         },
         {
             "id": "20",
@@ -1511,7 +1498,7 @@ const movies = {
             "id": "41",
             "title": "The Others",
             "year": "2001",
-            "director": "Alejandro Amenábar"
+            "director": "Alejandro AmenÃ¡bar"
         },
         {
             "id": "42",
@@ -1625,7 +1612,7 @@ const movies = {
             "id": "60",
             "title": "The Autopsy of Jane Doe",
             "year": "2016",
-            "director": "André Øvredal"
+            "director": "AndrÃ© Ã˜vredal"
         },
         {
             "id": "61",
@@ -1729,7 +1716,7 @@ const movies = {
             "id": "5",
             "title": "Harry Potter and the Prisoner of Azkaban",
             "year": "2004",
-            "director": "Alfonso Cuarón"
+            "director": "Alfonso CuarÃ³n"
         },
         {
             "id": "6",
@@ -2181,7 +2168,7 @@ const movies = {
             "id": "23",
             "title": "Birdman",
             "year": "2014",
-            "director": "Alejandro González Iñárritu"
+            "director": "Alejandro GonzÃ¡lez IÃ±Ã¡rritu"
         },
         {
             "id": "24",
@@ -2229,7 +2216,7 @@ const movies = {
             "id": "31",
             "title": "Dallas Buyers Club",
             "year": "2013",
-            "director": "Jean-Marc Vallée"
+            "director": "Jean-Marc VallÃ©e"
         },
         {
             "id": "32",
@@ -2241,7 +2228,7 @@ const movies = {
             "id": "33",
             "title": "The Revenant",
             "year": "2015",
-            "director": "Alejandro González Iñárritu"
+            "director": "Alejandro GonzÃ¡lez IÃ±Ã¡rritu"
         },
         {
             "id": "34",
@@ -2995,7 +2982,7 @@ const movies = {
             "id": "8",
             "title": "The Revenant",
             "year": "2015",
-            "director": "Alejandro G. Iñárritu"
+            "director": "Alejandro G. IÃ±Ã¡rritu"
         },
         {
             "id": "9",
@@ -3097,7 +3084,7 @@ const movies = {
             "id": "25",
             "title": "Pirates of the Caribbean: Dead Men Tell No Tales",
             "year": "2017",
-            "director": "Joachim Rønning, Espen Sandberg"
+            "director": "Joachim RÃ¸nning, Espen Sandberg"
         },
         {
             "id": "26",
@@ -3133,7 +3120,7 @@ const movies = {
             "id": "31",
             "title": "The Revenant",
             "year": "2015",
-            "director": "Alejandro González Iñárritu"
+            "director": "Alejandro GonzÃ¡lez IÃ±Ã¡rritu"
         },
         {
             "id": "32",
@@ -3318,164 +3305,3 @@ const movies = {
     ]
 
 }
-
-
-
-const scifi = document.getElementById('scifi');
-const fantasy = document.getElementById('fantasy');
-const drama = document.getElementById('drama');
-const adventure = document.getElementById('adventure');
-const comedy = document.getElementById('comedy');
-const horror = document.getElementById('horror');
-const romance = document.getElementById('romance');
-const kids = document.getElementById('kids');
-
-let selectedGenre ='';
-
-scifi.addEventListener('click', () => {
-    selectedGenre = 'scifi';
-    console.log(selectedGenre);
-    function getRandomMovie(selectedGenre) {
-        if (!movies[selectedGenre]) {
-            throw new Error("Invalid option selected");
-        }
-        const moviesSelected = movies[selectedGenre];
-        const randomIndex = Math.floor(Math.random() * moviesSelected.length);
-        return moviesSelected[randomIndex];
-    }
-    const randomMovie = getRandomMovie(selectedGenre);
-
-    console.log(randomMovie);
-    displayResult(randomMovie);
-});
-
-fantasy.addEventListener('click', () => {
-    selectedGenre = 'fantasy';
-    console.log(selectedGenre);
-    function getRandomMovie(selectedGenre) {
-        if (!movies[selectedGenre]) {
-            throw new Error("Invalid option selected");
-        }
-        const moviesSelected = movies[selectedGenre];
-        const randomIndex = Math.floor(Math.random() * moviesSelected.length);
-        return moviesSelected[randomIndex];
-    }
-    const randomMovie = getRandomMovie(selectedGenre);
-
-    console.log(randomMovie);
-    displayResult(randomMovie);
-});
-
-drama.addEventListener('click', () => {
-    selectedGenre = 'drama';
-    console.log(selectedGenre);
-    function getRandomMovie(selectedGenre) {
-        if (!movies[selectedGenre]) {
-            throw new Error("Invalid option selected");
-        }
-        const moviesSelected = movies[selectedGenre];
-        const randomIndex = Math.floor(Math.random() * moviesSelected.length);
-        return moviesSelected[randomIndex];
-    }
-    const randomMovie = getRandomMovie(selectedGenre);
-
-    console.log(randomMovie);
-    displayResult(randomMovie);
-});
-
-adventure.addEventListener('click', () => {
-    selectedGenre = 'adventure';
-    console.log(selectedGenre);
-    function getRandomMovie(selectedGenre) {
-        if (!movies[selectedGenre]) {
-            throw new Error("Invalid option selected");
-        }
-        const moviesSelected = movies[selectedGenre];
-        const randomIndex = Math.floor(Math.random() * moviesSelected.length);
-        return moviesSelected[randomIndex];
-    }
-    const randomMovie = getRandomMovie(selectedGenre);
-
-    console.log(randomMovie);
-    displayResult(randomMovie);
-});
-
-comedy.addEventListener('click', () => {
-    selectedGenre = 'comedy';
-    console.log(selectedGenre);
-    function getRandomMovie(selectedGenre) {
-        if (!movies[selectedGenre]) {
-            throw new Error("Invalid option selected");
-        }
-        const moviesSelected = movies[selectedGenre];
-        const randomIndex = Math.floor(Math.random() * moviesSelected.length);
-        return moviesSelected[randomIndex];
-    }
-    const randomMovie = getRandomMovie(selectedGenre);
-
-    console.log(randomMovie);
-    displayResult(randomMovie);
-});
-
-horror.addEventListener('click', () => {
-    selectedGenre = 'horror';
-    console.log(selectedGenre);
-    function getRandomMovie(selectedGenre) {
-        if (!movies[selectedGenre]) {
-            throw new Error("Invalid option selected");
-        }
-        const moviesSelected = movies[selectedGenre];
-        const randomIndex = Math.floor(Math.random() * moviesSelected.length);
-        return moviesSelected[randomIndex];
-    }
-    const randomMovie = getRandomMovie(selectedGenre);
-
-    console.log(randomMovie);
-    displayResult(randomMovie);
-});
-
-romance.addEventListener('click', () => {
-    selectedGenre = 'romance';
-    console.log(selectedGenre);
-    function getRandomMovie(selectedGenre) {
-        if (!movies[selectedGenre]) {
-            throw new Error("Invalid option selected");
-        }
-        const moviesSelected = movies[selectedGenre];
-        const randomIndex = Math.floor(Math.random() * moviesSelected.length);
-        return moviesSelected[randomIndex];
-    }
-    const randomMovie = getRandomMovie(selectedGenre);
-
-    console.log(randomMovie);
-    displayResult(randomMovie);
-});
-
-kids.addEventListener('click', () => {
-    selectedGenre = 'kids';
-    console.log(selectedGenre);
-    function getRandomMovie(selectedGenre) {
-        if (!movies[selectedGenre]) {
-            throw new Error("Invalid option selected");
-        }
-        const moviesSelected = movies[selectedGenre];
-        const randomIndex = Math.floor(Math.random() * moviesSelected.length);
-        return moviesSelected[randomIndex];
-    };
-
-    const randomMovie = getRandomMovie(selectedGenre);
-
-    console.log(randomMovie);
-    displayResult(randomMovie);
-
-});
-
-
-function displayResult(movie) {
-    const title = document.getElementById('title');
-    const year = document.getElementById('year');
-    const director = document.getElementById('director');
-    title.textContent = movie.title;
-    year.textContent = movie.year;
-    director.textContent = movie.director;
-};
