@@ -3473,9 +3473,7 @@ kids.addEventListener('click', () => {
 
 function displayResult(movie) {
     const title = document.getElementById('title');
-    const year = document.getElementById('year');
-    const director = document.getElementById('director');
-    title.textContent = movie.title;
-    year.textContent = movie.year;
-    director.textContent = movie.director;
+    const movieDiv = document.getElementById('movie');
+    movieDiv.style.display = 'flex';
+    title.textContent = `${movie.title} (${movie.year}) - ${movie.director}`;
 };
