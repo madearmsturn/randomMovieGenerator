@@ -1,38 +1,38 @@
 * {
-  font-family: 'Nunito Sans';
+  font-family: 'Jura', sans-serif;
   box-sizing: border-box;
 }
 
 body {
-  margin: 0 auto;
-  padding: 3px;
-  background-color: #fff;
+    margin: 0 auto;
+    padding: 3px;
+    background-image: linear-gradient(to bottom, #1446aa, #20349b, #28208a, #2d1e81, #311b78, #331a6f, #4a1867, #531867);
+    color: white;
 }
 
 .container {
-    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    border: 1px black solid;
-    border-radius: 10px;
-    margin-top: 3rem;
-    height: 60vh;
-    margin-left:auto;
-    margin-right: auto;
+    margin: 0 auto;
+    height: 100vh;
 }
 
 header {
   display: flex;
-  justify-content: center
+}
+
+h1,h2{
+    font-size: 1.5em;
+    font-weight: 200;
 }
 
 .genres {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 30px;
+
+
 }
 
 .genreList{
@@ -40,11 +40,11 @@ header {
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
-    width: 450px;
+    flex-direction:column;
 
 }
 .movieContainer{
-    height: 200px;
+    height: 20%;
 }
 
 
@@ -59,18 +59,29 @@ header {
 .title{
     font-weight:bold;
     font-size: 1.1rem;
+    text-align: center;
 }
 
 
 
 button {
-    background-color: #b9dad5;
     cursor: pointer;
-    width: 100px;
-    height: 100px;
     font-size: 1rem;
-    border: none;
+    width: 200px;
+    border-radius: 10px;
+    border: 1px white solid;
+    justify-content: left;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    height: 40px;
+    padding-left: 2.9rem;
+    text-transform: lowercase;
 }
+
+
 
     button:hover {
         box-shadow: 3px 4px 18px 2px rgba(0,0,0,0.24);
