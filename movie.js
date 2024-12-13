@@ -166,7 +166,9 @@ kids.addEventListener('click', () => {
 
 function displayResult(movie) {
     const title = document.getElementById('title');
+    const yrDr = document.getElementById('yrDr');
     const movieDiv = document.getElementById('movie');
     movieDiv.style.display = 'flex';
-    title.textContent = `${movie.title} (${movie.year}) - ${movie.director}`;
+    title.textContent = `${movie.title}`;
+    yrDr.textContent = `(${movie.year}) - ${movie.director}`;
 };
