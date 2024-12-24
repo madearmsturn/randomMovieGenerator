@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What are we watching?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=rocket" />
+    <link rel="stylesheet" href="style.css">
+    <script defer src="/helper.js"></script>
+    <script defer src="/movie.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>What are we watching tonight?</h1>
+        </header>
+        <form id="selectionForm">
+            <div class="selectionForm">
+
+                <div id="movieOrTv">
+                    <label>Are you in the mood for a movie or a tv show?</label>
+                    <div class="radioButtons">
+                        <label>
+                            <input type="radio" name="choice" id="movie" value="movie"> Movie
+                        </label>
+                        <label>
+                            <input type="radio" name="choice" id="tvshow" value="tvshow"> TV Show
+                        </label>
+                    </div>
+                    <div id="choiceError" class="error-message"></div>
+                </div>
+
+                <div id="genreForm" class="hidden">
+                    <label>What genre?</label>
+                    <select name="genres" id="genres">
+                    </select>
+                    <div id="genreError" class="error-message"></div>
+                </div>
+
+            </div>
+            <button id="searchBtn" type="submit">Find me something to watch</button>
+
+        </form>
+        <div class="responseSection">
+            <div id="titleInfo">
+                <div id="poster"></div>
+                <div id="description"></div>
+            </div>
+            <!--
+             <div id="likeOrDislikeBtns" hidden>
+                 <button id="likeBtn"><i class="fa-solid fa-thumbs-up"></i></button>
+                 <button id="dislikeBtn"><i class="fa-solid fa-thumbs-down"></i></button>
+            </div>
+        -->
+        </div>
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "randommoviegenerator",
+  "version": "1.0.0",
+  "description": "Simply open the index.html and select a genre!",
+  "main": "helper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madearmsturn/randomMovieGenerator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madearmsturn/randomMovieGenerator/issues"
+  },
+  "homepage": "https://github.com/madearmsturn/randomMovieGenerator#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
